@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoBulletstormSW</defName>
+      <label>BulletstormSW</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_BulletstormSW</defName>
+    <label>BulletstormSW</label>
+    <ammoTypes>
+      <Ammo_BulletstormSW>Bullet_BulletstormSW</Ammo_BulletstormSW>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="BulletstormSWBase" ParentName="AmmoBase" Abstract="True">
+    <description>Bulletstorm ammo</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoRailgunSW</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="BulletstormSWBase">
+    <defName>Ammo_BulletstormSW</defName>
+    <label>Bulletstorm cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>Charged</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseBulletstormSW" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBulletstormSW">
+    <defName>Bullet_BulletstormSW</defName>
+    <label>Railgun shot</label>
+    <projectile>
+      <damageAmountBase>3</damageAmountBase>
+      <armorPenetration>0.7</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

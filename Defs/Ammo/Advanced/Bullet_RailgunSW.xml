@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoRailgunSW</defName>
+      <label>RailgunSW</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_RailgunSW</defName>
+    <label>RailgunSW</label>
+    <ammoTypes>
+      <Ammo_RailgunSW>Bullet_RailgunSW</Ammo_RailgunSW>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="RailgunSWBase" ParentName="AmmoBase" Abstract="True">
+    <description>Railgun ammo</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoRailgunSW</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="RailgunSWBase">
+    <defName>Ammo_RailgunSW</defName>
+    <label>Rail Gun cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>Charged</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseRailgunSW" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseRailgunSW">
+    <defName>Bullet_RailgunSW</defName>
+    <label>Railgun shot</label>
+    <projectile>
+      <damageAmountBase>40</damageAmountBase>
+      <armorPenetration>0.95</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

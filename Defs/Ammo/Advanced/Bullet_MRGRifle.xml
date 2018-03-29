@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoMRGRifle</defName>
+      <label>MRGRifle</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_MRGRifle</defName>
+    <label>MRGRifle</label>
+    <ammoTypes>
+      <Ammo_MRGRifle>Bullet_MRGRifle</Ammo_MRGRifle>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Name="MRGRifleBase" ParentName="AmmoBase" Abstract="True">
+    <description>MRG Rifle ammo</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoMRGRifle</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MRGRifleBase">
+    <defName>Ammo_MRGRifle</defName>
+    <label>MRG Rifle cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>Charged</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Name="BaseMRGRifle" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/MRGP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <speed>200</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMRGRifle">
+    <defName>Bullet_MRGRifle</defName>
+    <label>MRG Rifle shot</label>
+    <projectile>
+      <damageAmountBase>35</damageAmountBase>
+      <armorPenetration>0.9</armorPenetration>
+    </projectile>
+  </ThingDef>
+	
+</Defs>

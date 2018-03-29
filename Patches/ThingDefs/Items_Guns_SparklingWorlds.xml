@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Gun_GaussrifleSW</defName>
+    <statBases>
+      <Mass>4</Mass>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.1</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>1.50</Bulk>
+    </statBases>
+    <Properties>
+		<recoilAmount>0.20</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_GaussrifleSW</defaultProjectile>
+      <warmupTime>0.5</warmupTime>
+      <range>34</range>
+      <soundCast>ShotChargeRifle</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>20</magazineSize>
+      <reloadTime>4.75</reloadTime>
+      <ammoSet>AmmoSet_GaussrifleSW</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+    </FireModes>
+    <weaponTags>
+		<li>AdvancedGun</li>
+    </weaponTags>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Gun_RailgunSW</defName>
+    <statBases>
+      <Mass>5</Mass>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.0</SightsEfficiency>
+      <ShotSpread>0.1</ShotSpread>
+      <SwayFactor>1.0</SwayFactor>
+      <Bulk>2.50</Bulk>
+    </statBases>
+    <Properties>
+		<recoilAmount>0.30</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_RailgunSW</defaultProjectile>
+      <warmupTime>2.0</warmupTime>
+      <range>45</range>
+      <soundCast>ShotChargeBlaster</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>10</magazineSize>
+      <reloadTime>3</reloadTime>
+      <ammoSet>AmmoSet_RailgunSW</ammoSet>
+    </AmmoUser>
+    <FireModes>
+    	<aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+    <weaponTags>
+      <li>SniperRifle</li>
+	  <li>AdvancedGun</li>
+    </weaponTags>
+  </Operation>
+  
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Gun_GaussrifleSW</defName>
+    <statBases>
+      <Mass>3.4</Mass>
+      <RangedWeapon_Cooldown>0.15</RangedWeapon_Cooldown>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>1.50</SwayFactor>
+      <Bulk>1.50</Bulk>
+    </statBases>
+    <Properties>
+		<recoilAmount>0.20</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_GaussrifleSW</defaultProjectile>
+      <warmupTime>0.1</warmupTime>
+      <range>21</range>
+      <soundCast>ShotChargeBlaster</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>60</magazineSize>
+      <reloadTime>4.75</reloadTime>
+      <ammoSet>AmmoSet_GaussrifleSW</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+    </FireModes>
+    <weaponTags>
+		<li>AdvancedGun</li>
+    </weaponTags>
+  </Operation>
+  
+</Patch>
