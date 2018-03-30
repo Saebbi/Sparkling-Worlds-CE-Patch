@@ -60,7 +60,7 @@
 
   <ThingDef Name="LaunchedEMPGrenadeSWRocket" ParentName="BaseBullet" Abstract="true">
     <graphicData>
-      <texPath>Things/Projectile/Rocket_BigBoom</texPath>
+      <texPath>Things/Projectile/GrenadeEMP</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
