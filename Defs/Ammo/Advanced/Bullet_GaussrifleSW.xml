@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoGaussrifleSW</defName>
-      <label>GaussrifleSW</label>
+      <label>Gaussrifle charge</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -39,7 +39,7 @@
     <defName>Ammo_GaussrifleSW</defName>
     <label>Gauss Rifle cartridge</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/Charged/Regular</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>

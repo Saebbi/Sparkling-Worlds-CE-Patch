@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoRailgunSW</defName>
-      <label>RailgunSW</label>
+      <label>Railgun charge</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>

@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoPainGunSW</defName>
-      <label>PainGunSW</label>
+      <label>Paingun cartridge</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -39,7 +39,7 @@
     <defName>Ammo_PainGunSW</defName>
     <label>Pain gun cartridge</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/Charged/Concentrated</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>

@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoPlasmaGunSW</defName>
-      <label>PlasmaGunSW</label>
+      <label>Plasma charge</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -39,7 +39,7 @@
     <defName>Ammo_PlasmaGunSW</defName>
     <label>Plasma cartridge</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/Charged/Ion</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>

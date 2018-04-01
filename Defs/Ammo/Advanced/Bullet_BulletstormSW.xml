@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoBulletstormSW</defName>
-      <label>BulletstormSW</label>
+      <label>Bulletstorm caliber</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -31,7 +31,7 @@
       <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <thingCategories>
-      <li>AmmoRailgunSW</li>
+      <li>AmmoBulletstormSW</li>
     </thingCategories>
   </ThingDef>
 

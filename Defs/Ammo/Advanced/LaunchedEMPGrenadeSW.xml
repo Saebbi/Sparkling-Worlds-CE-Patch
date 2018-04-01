@@ -5,7 +5,7 @@
       <defName>AmmoLaunchedEMPGrenadeSW</defName>
       <label>EMP Grenade</label>
       <parent>AmmoAdvanced</parent>
-      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+      <iconPath>UI/Icons/ThingCategories/CaliberGrenade</iconPath>
     </ThingCategoryDef>
 	
 	<!-- ==================== AmmoSet ========================== -->
