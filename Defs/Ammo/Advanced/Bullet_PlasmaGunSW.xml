@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_PlasmaGunSW</defName>
-    <label>PlasmaGunSW</label>
+    <label>Plasma charge</label>
     <ammoTypes>
       <Ammo_PlasmaGunSW>Bullet_PlasmaGunSW</Ammo_PlasmaGunSW>
     </ammoTypes>
@@ -70,5 +70,39 @@
       <armorPenetration>0.95</armorPenetration>
     </projectile>
   </ThingDef>
+	
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_PlasmaGunSW</defName>
+    <label>make Plasmagun cartridge x20</label>
+    <description>Craft 20 Plasmagun cartridges.</description>
+    <jobString>Making Plasmagun cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Component</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_PlasmaGunSW>20</Ammo_PlasmaGunSW>
+    </products>
+  </RecipeDef>
 	
 </Defs>

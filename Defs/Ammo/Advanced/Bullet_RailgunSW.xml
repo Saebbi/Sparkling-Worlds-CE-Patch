@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_RailgunSW</defName>
-    <label>RailgunSW</label>
+    <label>Railgun charge</label>
     <ammoTypes>
       <Ammo_RailgunSW>Bullet_RailgunSW</Ammo_RailgunSW>
     </ammoTypes>
@@ -39,7 +39,7 @@
     <defName>Ammo_RailgunSW</defName>
     <label>Rail Gun cartridge</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/HighCaliber/Sabot</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -70,4 +70,38 @@
     </projectile>
   </ThingDef>
 	
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_RailgunSW</defName>
+    <label>make Railgun cartridge x20</label>
+    <description>Craft 20 Railgun cartridges.</description>
+    <jobString>Making Railgun cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Component</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_RailgunSW>20</Ammo_RailgunSW>
+    </products>
+  </RecipeDef>
+		
 </Defs>

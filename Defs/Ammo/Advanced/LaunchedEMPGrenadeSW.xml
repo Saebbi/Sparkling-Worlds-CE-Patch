@@ -39,7 +39,7 @@
     <defName>Ammo_LaunchedEMPGrenadeSW</defName>
     <label>EMP Grenade</label>
     <graphicData>
-      <texPath>Things/Ammo/RPG/HEAT</texPath>
+      <texPath>Things/Ammo/GrenadeLauncher/EMP</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -80,5 +80,39 @@
 		<explosionDelay>40</explosionDelay>
 	</projectile>
   </ThingDef>
+	
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_LaunchedEMPGrenadeSW</defName>
+    <label>make EMP Grenade x12</label>
+    <description>Craft 12 EMP Grenades.</description>
+    <jobString>Making EMP Grenades cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Component</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_LaunchedEMPGrenadeSW>12</Ammo_LaunchedEMPGrenadeSW>
+    </products>
+  </RecipeDef>
 	
 </Defs>

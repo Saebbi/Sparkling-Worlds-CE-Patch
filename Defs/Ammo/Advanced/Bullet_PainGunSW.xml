@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_PainGunSW</defName>
-    <label>PlasmaGunSW</label>
+    <label>Paingun cartridge</label>
     <ammoTypes>
       <Ammo_PainGunSW>Bullet_PainGunSW</Ammo_PainGunSW>
     </ammoTypes>
@@ -69,5 +69,39 @@
       <armorPenetration>0.8</armorPenetration>
     </projectile>
   </ThingDef>
+	
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_PainGunSW</defName>
+    <label>make PainGun cartridge x20</label>
+    <description>Craft 20 PainGun cartridges.</description>
+    <jobString>Making PainGun cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Component</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_PainGunSW>20</Ammo_PainGunSW>
+    </products>
+  </RecipeDef>
 	
 </Defs>

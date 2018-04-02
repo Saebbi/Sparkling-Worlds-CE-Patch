@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_GaussrifleSW</defName>
-    <label>GaussrifleSW</label>
+    <label>Gaussrifle charge</label>
     <ammoTypes>
       <Ammo_GaussrifleSW>Bullet_GaussrifleSW</Ammo_GaussrifleSW>
     </ammoTypes>
@@ -69,5 +69,39 @@
       <armorPenetration>0.8</armorPenetration>
     </projectile>
   </ThingDef>
+	
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_GaussrifleSW</defName>
+    <label>make Gaussrifle cartridge x20</label>
+    <description>Craft 20 Gaussrifle cartridges.</description>
+    <jobString>Making Gaussrifle cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Component</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_GaussrifleSW>20</Ammo_GaussrifleSW>
+    </products>
+  </RecipeDef>
 	
 </Defs>
