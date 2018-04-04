@@ -70,7 +70,7 @@
     </projectile>
   </ThingDef>
 	
-  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+  <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_PainGunSW</defName>
     <label>make PainGun cartridge x20</label>
     <description>Craft 20 PainGun cartridges.</description>

@@ -70,7 +70,7 @@
     </projectile>
   </ThingDef>
 	
-  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+  <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_BulletstormSW</defName>
     <label>make Bulletstorm cartridge x200</label>
     <description>Craft 200 Bulletstorm cartridges.</description>

@@ -39,4 +39,30 @@
     </weaponTags>
   </Operation>
 
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="Gun_PlasmaGunSW"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>BurnSW</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.35</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+  </Operation>
+  
 </Patch>

@@ -71,7 +71,7 @@
     </projectile>
   </ThingDef>
 	
-  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+  <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_PlasmaGunSW</defName>
     <label>make Plasmagun cartridge x20</label>
     <description>Craft 20 Plasmagun cartridges.</description>

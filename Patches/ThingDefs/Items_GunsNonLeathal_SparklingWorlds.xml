@@ -39,4 +39,31 @@
     </weaponTags>
   </Operation>
   
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="Gun_PainGunSW"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+  </Operation>
+  
 </Patch>

@@ -38,6 +38,33 @@
     </weaponTags>
   </Operation>
 
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="Gun_GaussrifleSW"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+  </Operation>
+  
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_RailgunSW</defName>
     <statBases>
@@ -74,6 +101,33 @@
       <li>SniperRifle</li>
 	  <li>AdvancedGun</li>
     </weaponTags>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="Gun_RailgunSW"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
   </Operation>
   
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -114,6 +168,33 @@
     </weaponTags>
   </Operation>
   
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="Gun_GaussrifleSW"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+  </Operation>
+  
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_BulletstormSW</defName>
     <statBases>
@@ -149,6 +230,33 @@
     <weaponTags>
 		<li>AdvancedGun</li>
     </weaponTags>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="Gun_BulletstormSW"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
   </Operation>
   
 </Patch>

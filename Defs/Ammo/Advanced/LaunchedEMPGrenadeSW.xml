@@ -81,7 +81,7 @@
 	</projectile>
   </ThingDef>
 	
-  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+  <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_LaunchedEMPGrenadeSW</defName>
     <label>make EMP Grenade x12</label>
     <description>Craft 12 EMP Grenades.</description>
