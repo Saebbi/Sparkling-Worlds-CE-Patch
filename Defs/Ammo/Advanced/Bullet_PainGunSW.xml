@@ -102,6 +102,7 @@
     <products>
       <Ammo_PainGunSW>20</Ammo_PainGunSW>
     </products>
+	<researchPrerequisite>NervShockerRangedSW</researchPrerequisite>
   </RecipeDef>
 	
 </Defs>

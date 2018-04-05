@@ -103,6 +103,7 @@
     <products>
       <Ammo_PlasmaGunSW>20</Ammo_PlasmaGunSW>
     </products>
+	<researchPrerequisite>PlasmaGunnerySW</researchPrerequisite>
   </RecipeDef>
 	
 </Defs>

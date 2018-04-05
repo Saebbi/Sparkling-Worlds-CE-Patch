@@ -102,6 +102,7 @@
     <products>
       <Ammo_BulletstormSW>200</Ammo_BulletstormSW>
     </products>
+	<researchPrerequisite>RailgunSW</researchPrerequisite>
   </RecipeDef>
 	
 </Defs>

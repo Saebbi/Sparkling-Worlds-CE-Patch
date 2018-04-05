@@ -113,6 +113,7 @@
     <products>
       <Ammo_LaunchedEMPGrenadeSW>12</Ammo_LaunchedEMPGrenadeSW>
     </products>
+	<researchPrerequisite>ExplosiveManuSW</researchPrerequisite>
   </RecipeDef>
 	
 </Defs>

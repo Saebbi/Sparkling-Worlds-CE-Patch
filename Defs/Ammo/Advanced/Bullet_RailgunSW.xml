@@ -102,6 +102,7 @@
     <products>
       <Ammo_RailgunSW>20</Ammo_RailgunSW>
     </products>
+	<researchPrerequisite>RailgunSW</researchPrerequisite>
   </RecipeDef>
 		
 </Defs>
