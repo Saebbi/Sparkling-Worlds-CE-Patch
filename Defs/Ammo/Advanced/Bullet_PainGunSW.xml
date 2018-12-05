@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="PainGunSWBase" ParentName="AmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="PainGunSWBase" ParentName="AmmoBase" Abstract="True">
     <description>Pain gun ammo</description>
     <statBases>
 	  <Mass>0.01</Mass>
@@ -35,7 +35,7 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="PainGunSWBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="PainGunSWBase">
     <defName>Ammo_PainGunSW</defName>
     <label>Pain gun cartridge</label>
     <graphicData>
@@ -50,7 +50,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-  <ThingDef Name="BasePainGunSW" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BasePainGunSW" ParentName="BaseBullet" Abstract="true">
     <graphicData>
 		<texPath>Things/Projectile/Charge_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -61,12 +61,12 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BasePainGunSW">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePainGunSW">
     <defName>Bullet_PainGunSW</defName>
     <label>Pain gun shot</label>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>1</damageAmountBase>
-      <armorPenetration>0.8</armorPenetration>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
     </projectile>
   </ThingDef>
 	
@@ -87,7 +87,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Component</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
         <count>3</count>
@@ -96,7 +96,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Component</li>
+        <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

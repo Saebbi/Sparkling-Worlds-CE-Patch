@@ -18,7 +18,7 @@
       <defaultProjectile>Bullet_PlasmaGunSW</defaultProjectile>
       <warmupTime>2.0</warmupTime>
       <range>32</range>
-      <soundCast>ShotIncendiaryLauncher</soundCast>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>12</muzzleFlashScale>
         <targetParams>

@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="LaunchedEMPGrenadeSWBase" ParentName="AmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="LaunchedEMPGrenadeSWBase" ParentName="AmmoBase" Abstract="True">
     <description>EMP Grenade</description>
     <statBases>
 	  <Mass>0.01</Mass>
@@ -35,7 +35,7 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="LaunchedEMPGrenadeSWBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="LaunchedEMPGrenadeSWBase">
     <defName>Ammo_LaunchedEMPGrenadeSW</defName>
     <label>EMP Grenade</label>
     <graphicData>
@@ -58,7 +58,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-  <ThingDef Name="LaunchedEMPGrenadeSWRocket" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="LaunchedEMPGrenadeSWRocket" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/GrenadeEMP</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -70,10 +70,10 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="LaunchedEMPGrenadeSWRocket">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="LaunchedEMPGrenadeSWRocket">
     <defName>Bullet_LaunchedEMPGrenadeSW</defName>
     <label>EMP Grenade</label>
-	<projectile>
+	<projectile Class="CombatExtended.ProjectilePropertiesCE">
 		<explosionRadius>3.5</explosionRadius>
 		<damageDef>EMP</damageDef>
 		<damageAmountBase>80</damageAmountBase>
@@ -98,7 +98,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Component</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
         <count>3</count>
@@ -107,13 +107,13 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Component</li>
+        <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
       <Ammo_LaunchedEMPGrenadeSW>12</Ammo_LaunchedEMPGrenadeSW>
     </products>
-	<researchPrerequisite>ExplosiveManuSW</researchPrerequisite>
+	<researchPrerequisite>AdvLauncherSystemsSW</researchPrerequisite>
   </RecipeDef>
 	
 </Defs>

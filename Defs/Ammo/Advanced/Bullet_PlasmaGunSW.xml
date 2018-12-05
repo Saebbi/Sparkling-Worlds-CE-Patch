@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="PlasmaGunSWBase" ParentName="AmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="PlasmaGunSWBase" ParentName="AmmoBase" Abstract="True">
     <description>Plasma ammo</description>
     <statBases>
 	  <Mass>0.01</Mass>
@@ -35,7 +35,7 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="PlasmaGunSWBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="PlasmaGunSWBase">
     <defName>Ammo_PlasmaGunSW</defName>
     <label>Plasma cartridge</label>
     <graphicData>
@@ -50,7 +50,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-  <ThingDef Name="BasePlasmaGunSW" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BasePlasmaGunSW" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Items/PlasmaShotSW</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -62,12 +62,12 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BasePlasmaGunSW">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePlasmaGunSW">
     <defName>Bullet_PlasmaGunSW</defName>
     <label>Plasma shot</label>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>120</damageAmountBase>
-      <armorPenetration>0.95</armorPenetration>
+      <armorPenetrationBase>0.95</armorPenetrationBase>
     </projectile>
   </ThingDef>
 	
@@ -88,7 +88,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Component</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
         <count>3</count>
@@ -97,7 +97,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Component</li>
+        <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

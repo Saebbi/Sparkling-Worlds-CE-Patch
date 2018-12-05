@@ -18,7 +18,7 @@
       <defaultProjectile>Bullet_GaussrifleSW</defaultProjectile>
       <warmupTime>0.5</warmupTime>
       <range>34</range>
-      <soundCast>ShotChargeRifle</soundCast>
+      <soundCast>Shot_ChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -82,7 +82,7 @@
       <defaultProjectile>Bullet_RailgunSW</defaultProjectile>
       <warmupTime>2.0</warmupTime>
       <range>45</range>
-      <soundCast>ShotChargeBlaster</soundCast>
+      <soundCast>Shot_ChargeBlaster</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -147,7 +147,7 @@
       <defaultProjectile>Bullet_GaussrifleSW</defaultProjectile>
       <warmupTime>0.5</warmupTime>
       <range>34</range>
-      <soundCast>ShotChargeRifle</soundCast>
+      <soundCast>Shot_ChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -212,7 +212,7 @@
       <defaultProjectile>Bullet_BulletstormSW</defaultProjectile>
       <warmupTime>0.1</warmupTime>
       <range>21</range>
-      <soundCast>ShotChargeBlaster</soundCast>
+      <soundCast>Shot_ChargeBlaster</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>

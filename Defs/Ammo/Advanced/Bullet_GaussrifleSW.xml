@@ -20,7 +20,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-  <ThingDef Name="GaussrifleSWBase" ParentName="AmmoBase" Abstract="True">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="GaussrifleSWBase" ParentName="AmmoBase" Abstract="True">
     <description>Gauss Rifle ammo</description>
     <statBases>
 	  <Mass>0.01</Mass>
@@ -35,7 +35,7 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="GaussrifleSWBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="GaussrifleSWBase">
     <defName>Ammo_GaussrifleSW</defName>
     <label>Gauss Rifle cartridge</label>
     <graphicData>
@@ -50,7 +50,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-  <ThingDef Name="BaseGaussrifleSW" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseGaussrifleSW" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -61,12 +61,12 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseGaussrifleSW">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGaussrifleSW">
     <defName>Bullet_GaussrifleSW</defName>
     <label>Gauss Rifle shot</label>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>12</damageAmountBase>
-      <armorPenetration>0.8</armorPenetration>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
     </projectile>
   </ThingDef>
 	
@@ -87,7 +87,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Component</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
         <count>3</count>
@@ -96,7 +96,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Component</li>
+        <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
