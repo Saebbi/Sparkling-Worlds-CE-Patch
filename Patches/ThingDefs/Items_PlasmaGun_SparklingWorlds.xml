@@ -5,7 +5,7 @@
     <defName>Gun_PlasmaGunSW</defName>
     <statBases>
       <Mass>6</Mass>
-      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.50</SwayFactor>
@@ -16,8 +16,8 @@
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_PlasmaGunSW</defaultProjectile>
-      <warmupTime>2.0</warmupTime>
-      <range>32</range>
+      <warmupTime>2.4</warmupTime>
+      <range>31.9</range>
       <soundCast>Shot_IncendiaryLauncher</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>12</muzzleFlashScale>

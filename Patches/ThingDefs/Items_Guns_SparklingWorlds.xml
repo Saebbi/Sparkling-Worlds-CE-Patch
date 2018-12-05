@@ -5,7 +5,7 @@
     <defName>Gun_GaussrifleSW</defName>
     <statBases>
       <Mass>4</Mass>
-      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.50</SwayFactor>
@@ -17,7 +17,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_GaussrifleSW</defaultProjectile>
       <warmupTime>0.5</warmupTime>
-      <range>34</range>
+      <range>31.9</range>
       <soundCast>Shot_ChargeRifle</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -69,7 +69,7 @@
     <defName>Gun_RailgunSW</defName>
     <statBases>
       <Mass>5</Mass>
-      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.83</RangedWeapon_Cooldown>
       <SightsEfficiency>1.0</SightsEfficiency>
       <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.0</SwayFactor>
@@ -81,7 +81,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_RailgunSW</defaultProjectile>
       <warmupTime>2.0</warmupTime>
-      <range>45</range>
+      <range>44.9</range>
       <soundCast>Shot_ChargeBlaster</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -130,12 +130,11 @@
 	</value>	
   </Operation>
   
-  
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_BulletstormSW</defName>
     <statBases>
       <Mass>3.4</Mass>
-      <RangedWeapon_Cooldown>0.15</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.14</ShotSpread>
       <SwayFactor>1.50</SwayFactor>
@@ -147,7 +146,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_BulletstormSW</defaultProjectile>
       <warmupTime>0.1</warmupTime>
-      <range>21</range>
+      <range>20.9</range>
       <soundCast>Shot_ChargeBlaster</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>

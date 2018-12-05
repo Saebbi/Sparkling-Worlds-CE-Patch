@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Sparkling Worlds - CE Patch [1.0]</name>
+	<name>Sparkling Worlds - CE Patch [1.0] - Combat Extendend Compatibility</name>
 	<author>Saebbi</author>
 	<url>https://ludeon.com/forums/index.php?topic=39148.0</url>
-	<targetVersion>1.0.0</targetVersion>
+	<targetVersion>1.0.2096</targetVersion>
 	<description>Patches the Sparkling Worlds mod to work with Combat Extended.\nCreated by Saebbi.\n\nLoad order should be Original Mod -> Combat Extended -> Patch</description>
 </ModMetaData>

@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoGaussrifleSW</defName>
-      <label>Gaussrifle charge</label>
+      <label>Gaussrifle ammo</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_GaussrifleSW</defName>
-    <label>Gaussrifle charge</label>
+    <label>Gaussrifle ammo</label>
     <ammoTypes>
       <Ammo_GaussrifleSW>Bullet_GaussrifleSW</Ammo_GaussrifleSW>
     </ammoTypes>

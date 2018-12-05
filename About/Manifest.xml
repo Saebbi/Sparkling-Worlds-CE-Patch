@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Manifest>
+    <identifier>SparklingWorldsCEPatch</identifier>
+    <version>2.4.0</version>
+	<dependencies>
+        <li>SparklingWorldsFULL</li>
+		<li>CombatExtended</li>
+    </dependencies>
+    <showCrossPromotions>true</showCrossPromotions>
+</Manifest>

@@ -58,7 +58,7 @@
     </graphicData>
     <projectile>
       <damageDef>PlasmaSW</damageDef>
-      <speed>40</speed>
+      <speed>50</speed>
     </projectile>
   </ThingDef>
 
@@ -67,7 +67,7 @@
     <label>Plasma shot</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>120</damageAmountBase>
-      <armorPenetrationBase>0.95</armorPenetrationBase>
+      <armorPenetrationBase>1.0</armorPenetrationBase>
     </projectile>
   </ThingDef>
 	

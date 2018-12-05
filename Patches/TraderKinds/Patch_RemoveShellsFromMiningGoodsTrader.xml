@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <Operation Class="PatchOperationSequence">
+  	<success>Always</success>
+  	<operations>
+    	<li Class="PatchOperationRemove">
+      	<xpath>*/TraderKindDef[defName="Orbital_MiningGoodsSW"]/stockGenerators/li[thingDef="Shell_HighExplosive"]</xpath>
+    	</li>
+    	<li Class="PatchOperationRemove">
+      	<xpath>*/TraderKindDef[defName="Caravan_MiningGoodsSW"]/stockGenerators/li[thingDef="Shell_HighExplosive"]</xpath>
+    	</li>
+		</operations>
+	</Operation>
+
+</Patch>

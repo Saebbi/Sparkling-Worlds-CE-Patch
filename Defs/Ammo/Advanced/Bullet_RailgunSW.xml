@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoRailgunSW</defName>
-      <label>Railgun charge</label>
+      <label>Gauss lance charge</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_RailgunSW</defName>
-    <label>Railgun charge</label>
+    <label>Gauss lance charge</label>
     <ammoTypes>
       <Ammo_RailgunSW>Bullet_RailgunSW</Ammo_RailgunSW>
     </ammoTypes>
@@ -21,7 +21,7 @@
 	<!-- ==================== Ammo ========================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" Name="RailgunSWBase" ParentName="AmmoBase" Abstract="True">
-    <description>Railgun ammo</description>
+    <description>Gauss lance ammo</description>
     <statBases>
 	  <Mass>0.01</Mass>
 	  <Bulk>0.02</Bulk>
@@ -63,7 +63,7 @@
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseRailgunSW">
     <defName>Bullet_RailgunSW</defName>
-    <label>gauss lance</label>
+    <label>gauss lance shot</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>40</damageAmountBase>
       <armorPenetrationBase>0.95</armorPenetrationBase>
@@ -72,9 +72,9 @@
 	
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_RailgunSW</defName>
-    <label>make Railgun cartridge x20</label>
-    <description>Craft 20 Railgun cartridges.</description>
-    <jobString>Making Railgun cartridges.</jobString>
+    <label>make gauss lance cartridge x20</label>
+    <description>Craft 20 gauss lance cartridges.</description>
+    <jobString>Making gauss lance cartridges.</jobString>
     <ingredients>
       <li>
         <filter>

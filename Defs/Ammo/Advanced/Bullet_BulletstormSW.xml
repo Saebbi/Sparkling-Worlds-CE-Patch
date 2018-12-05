@@ -3,7 +3,7 @@
 
     <ThingCategoryDef>
       <defName>AmmoBulletstormSW</defName>
-      <label>Bulletstorm caliber</label>
+      <label>Bulletstorm ammo</label>
       <parent>AmmoAdvanced</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
@@ -12,7 +12,7 @@
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_BulletstormSW</defName>
-    <label>Bulletstorm caliber</label>
+    <label>Bulletstorm ammo</label>
     <ammoTypes>
       <Ammo_BulletstormSW>Bullet_BulletstormSW</Ammo_BulletstormSW>
     </ammoTypes>
@@ -66,7 +66,7 @@
     <label>Bulletstorm shot</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>3</damageAmountBase>
-      <armorPenetrationBase>0.7</armorPenetrationBase>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
     </projectile>
   </ThingDef>
 	
