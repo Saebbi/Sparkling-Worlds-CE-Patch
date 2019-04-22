@@ -56,7 +56,7 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>PlasmaSW</damageDef>
       <speed>50</speed>
     </projectile>
